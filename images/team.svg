@@ -1,0 +1,10 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="40" fill="#FFF7E6"/>
+  <circle cx="300" cy="270" r="132" fill="#F5C400" opacity=".18"/>
+  <circle cx="607" cy="238" r="150" fill="#FFB800" opacity=".2"/>
+  <circle cx="900" cy="276" r="132" fill="#C8F2E1" opacity=".9"/>
+  <path d="M170 612c26-116 96-174 210-174s184 58 210 174H170Z" fill="#FFFFFF"/>
+  <path d="M477 612c26-128 102-192 228-192s202 64 228 192H477Z" fill="#FFFFFF"/>
+  <path d="M768 612c26-116 96-174 210-174s184 58 210 174H768Z" fill="#FFFFFF"/>
+  <text x="80" y="692" font-family="Arial Black, Arial, sans-serif" font-size="58" fill="#111111">BUILT FOR HIGH OUTPUT LIVES</text>
+</svg>

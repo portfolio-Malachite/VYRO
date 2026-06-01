@@ -1,0 +1,11 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="620" rx="34" fill="#FFF7E6"/>
+  <path d="M0 202c150-62 290-72 420-31s250 47 360 18 250-22 420 22" stroke="#E8DCCB" stroke-width="28"/>
+  <path d="M0 430c164-54 310-49 438 15s255 73 381 28 253-54 381-28" stroke="#EEE4D8" stroke-width="28"/>
+  <path d="M200 0c16 94 26 191 29 292s17 210 42 328" stroke="#E1D5C5" stroke-width="24"/>
+  <path d="M760 0c-41 144-52 258-33 342 18 84 21 176 9 278" stroke="#E1D5C5" stroke-width="24"/>
+  <circle cx="615" cy="304" r="84" fill="#F5C400" opacity=".18"/>
+  <circle cx="615" cy="304" r="23" fill="#FFB800"/>
+  <path d="M615 178c70 0 126 56 126 126 0 84-126 184-126 184S489 388 489 304c0-70 56-126 126-126Z" stroke="#fff" stroke-opacity=".75" stroke-width="10"/>
+  <text x="72" y="548" font-family="Arial Black, Arial, sans-serif" font-size="62" fill="#111111">VYRO HQ / LOS ANGELES</text>
+</svg>

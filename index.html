@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYRO | Fuel Beyond Limits</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="loader"><div class="loader-mark">VYRO</div></div>
+  <div class="announcement">
+    <div class="marquee-track">
+      <span>NATURAL CAFFEINE</span><span>ZERO SUGAR</span><span>NO CRASH</span><span>B12 + B6</span><span>CLEAN ENERGY</span><span>PERFORMANCE DRINK</span>
+      <span>NATURAL CAFFEINE</span><span>ZERO SUGAR</span><span>NO CRASH</span><span>B12 + B6</span><span>CLEAN ENERGY</span><span>PERFORMANCE DRINK</span>
+    </div>
+  </div>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      
+      <a class="icon-btn" href="dashboard.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+      <button class="icon-btn cart-toggle" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Fuel<br><span>Beyond</span><br>Limits</h1>
+        <p class="hero-description">Zero sugar. No crash.<br>Clean energy with B12 + B6.</p>
+        <span class="hero-cta-motion"><a class="hero-cta" href="shop.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></span>
+      </div>
+      <picture class="hero-picture">
+        <source media="(max-width: 768px)" srcset="images/webp/vyro-hero-mobile.webp" width="853" height="1844">
+        <img class="hero-image" src="images/webp/vyro-hero-banner.webp" alt="VYRO Hero" width="1920" height="1080" fetchpriority="high" decoding="async">
+      </picture>
+    </section>
+
+    <section class="why-strip" aria-label="Why VYRO benefits">
+      <div class="why-strip-col why-strip-label"><span>WHY VYRO?</span></div>
+      <div class="why-strip-track">
+        <div class="why-strip-col">
+          <i class="fa-solid fa-cube"></i>
+          <h3>ZERO<br>SUGAR</h3>
+          <p>All the flavor.<br>None of the sugar.</p>
+        </div>
+        <div class="why-strip-col">
+          <i class="fa-solid fa-leaf"></i>
+          <h3>NATURAL<br>CAFFEINE</h3>
+          <p>Smooth energy<br>from green tea.</p>
+        </div>
+        <div class="why-strip-col">
+          <i class="fa-solid fa-bolt"></i>
+          <h3>NO<br>CRASH</h3>
+          <p>Steady focus<br>from start to end.</p>
+        </div>
+        <div class="why-strip-col">
+          <i class="fa-solid fa-plus"></i>
+          <h3>B12 + B6</h3>
+          <p>Essential vitamins<br>for daily performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flavors section-pad reveal" id="flavors">
+      <div class="container section-head">
+        <span class="eyebrow">Flavor Collection</span>
+        <h2>Choose your clean energy ritual.</h2>
+      </div>
+      <div class="container flavor-grid" role="list" aria-label="VYRO flavor selector">
+        <article class="flavor-card" data-flavor="berry" data-product-url="product.html?flavor=electric-berry" data-cart-id="berry" tabindex="0" role="link" style="--flavor-bg:#F3E5FF;--flavor-accent:#B978FF">
+          <span class="fruit-mark">Berry</span>
+          <div class="image-wrapper">
+            <img class="flavor-can" src="images/webp/can-card-1.webp" alt="Electric Berry VYRO can" width="480" height="720" loading="lazy" decoding="async">
+          </div>
+          <span class="flavor-name">Electric Berry</span>
+          <small>Wild berry, acai, lime</small>
+          <div class="flavor-card-actions">
+            <button class="card-buy-now" type="button" data-card-buy="berry">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="card-add-cart" type="button" data-card-add="berry"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+          </div>
+        </article>
+        <article class="flavor-card" data-flavor="citrus" data-product-url="product.html?flavor=citrus-volt" data-cart-id="citrus" tabindex="0" role="link" style="--flavor-bg:#FFF4B8;--flavor-accent:#F5C400">
+          <span class="fruit-mark">Citrus</span>
+          <div class="image-wrapper">
+            <img class="flavor-can" src="images/webp/can-card-2.webp" alt="Citrus Volt VYRO can" width="480" height="720" loading="lazy" decoding="async">
+          </div>
+          <span class="flavor-name">Citrus Volt</span>
+          <small>Lemon peel, yuzu, ginger</small>
+          <div class="flavor-card-actions">
+            <button class="card-buy-now" type="button" data-card-buy="citrus">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="card-add-cart" type="button" data-card-add="citrus"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+          </div>
+        </article>
+        <article class="flavor-card" data-flavor="mango" data-product-url="product.html?flavor=mango-charge" data-cart-id="tropic" tabindex="0" role="link" style="--flavor-bg:#FFE6B9;--flavor-accent:#FFB63F">
+          <span class="fruit-mark">Mango</span>
+          <div class="image-wrapper">
+            <img class="flavor-can" src="images/webp/can-card-3.webp" alt="Mango Charge VYRO can" width="480" height="720" loading="lazy" decoding="async">
+          </div>
+          <span class="flavor-name">Mango Charge</span>
+          <small>Mango, pineapple, sea salt</small>
+          <div class="flavor-card-actions">
+            <button class="card-buy-now" type="button" data-card-buy="tropic">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="card-add-cart" type="button" data-card-add="tropic"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+          </div>
+        </article>
+        <article class="flavor-card" data-flavor="blue" data-product-url="product.html?flavor=blue-rush" data-cart-id="blue" tabindex="0" role="link" style="--flavor-bg:#DDF4FF;--flavor-accent:#43B7FF">
+          <span class="fruit-mark">Blue</span>
+          <div class="image-wrapper">
+            <img class="flavor-can" src="images/webp/can-card-4.webp" alt="Blue Rush VYRO can" width="480" height="720" loading="lazy" decoding="async">
+          </div>
+          <span class="flavor-name">Blue Rush</span>
+          <small>Blue raspberry, mint, citrus</small>
+          <div class="flavor-card-actions">
+            <button class="card-buy-now" type="button" data-card-buy="blue">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="card-add-cart" type="button" data-card-add="blue"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="container flavor-cta-wrap">
+        <a class="flavor-cta-link" href="shop.html">View All Products <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="offer-banner section-pad reveal" aria-label="Electric Berry limited offer">
+      <div class="offer-shell">
+        <div class="offer-copy">
+          <span class="offer-badge"><i class="fa-regular fa-clock"></i> Limited Time Offer</span>
+          <h2>Electric <span>Berry</span></h2>
+          <h3>Wild berry, acai &amp; lime with <span class="accent">clean green tea energy.</span></h3>
+          <p>A refreshing burst of mixed berries with a hint of acai and lime. Zero sugar. Natural caffeine.</p>
+
+          <div class="offer-timer" aria-label="Offer countdown">
+            <strong>Offer Ends In</strong>
+            <div class="offer-timer-grid" data-offer-countdown>
+              <div><span data-time="days">50</span><small>DAYS</small></div>
+              <div><span data-time="hours">12</span><small>HRS</small></div>
+              <div><span data-time="minutes">45</span><small>MINS</small></div>
+              <div><span data-time="seconds">30</span><small>SECS</small></div>
+            </div>
+            <p class="offer-expired" hidden>OFFER EXPIRED</p>
+          </div>
+
+          <div class="offer-actions">
+            <a class="offer-buy" href="checkout.html">Buy Now <i class="fa-solid fa-arrow-right"></i></a>
+            <button class="offer-cart" type="button" data-add="berry"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+          </div>
+
+          <div class="offer-features">
+            <article>
+              <i class="fa-solid fa-bolt"></i>
+              <div class="offer-feature-copy">
+                <h4>Clean Energy</h4>
+                <p>Smooth, lasting energy that keeps you going.</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-leaf"></i>
+              <div class="offer-feature-copy">
+                <h4>Natural Caffeine</h4>
+                <p>From green tea. No jitters.</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-cube"></i>
+              <div class="offer-feature-copy">
+                <h4>Zero Sugar</h4>
+                <p>All the flavor, none of the sugar.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="offer-visual">
+          <div class="offer-splash" aria-hidden="true"></div>
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/webp/can-feature-mobile-1.webp" width="560" height="840">
+            <img src="images/webp/can-1.webp" alt="Electric Berry VYRO can" width="1024" height="1536" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section-pad reveal product-story">
+      <div class="container why-grid">
+        <div>
+          <span class="eyebrow">Product Showcase</span>
+          <h2>Large-format product moments made for premium shelves.</h2>
+          <img class="wide-image story-image" src="images/lifestyle-pour.svg" alt="VYRO beverage lifestyle scene" width="1200" height="900" loading="lazy" decoding="async">
+        </div>
+        <div class="why-list">
+          <div><strong>01</strong><p>A sculptural can system with a bold VYRO identity and bright flavor cues.</p></div>
+          <div><strong>02</strong><p>Horizontal editorial panels that feel closer to campaign photography than a product grid.</p></div>
+          <div><strong>03</strong><p>Soft cream surfaces, botanical color, and generous whitespace for a luxury beverage feel.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-pad reveal">
+      <div class="container section-head">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2>Early fans are already locked in.</h2>
+      </div>
+      <div class="container swiper review-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review-card"><p>“The first energy drink I actually want on my desk.”</p><span>Aria, Founder</span></div>
+          <div class="swiper-slide review-card"><p>“Clean, premium, and it does not flatten me two hours later.”</p><span>Kenji, Streamer</span></div>
+          <div class="swiper-slide review-card"><p>“Citrus Volt is dangerous. I ordered a case after one can.”</p><span>Maya, Trainer</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-pad reveal">
+      <div class="container stat-grid">
+        <div><strong>48K</strong><span>Launch waitlist</span></div>
+        <div><strong>4.9/5</strong><span>Average rating</span></div>
+        <div><strong>0g</strong><span>Sugar in every can</span></div>
+        <div><strong>24hr</strong><span>Cold fulfillment</span></div>
+      </div>
+    </section>
+
+    <section class="brand-story section-pad reveal">
+      <div class="container section-head">
+        <span class="eyebrow">Brand Story</span>
+        <h2>Life moves fast. Your drink should keep it simple.</h2>
+      </div>
+      <div class="container editorial-grid">
+        <div class="editorial-card tall"><h3>For the morning build.</h3><p>Bright citrus, clean energy, and no syrupy weight.</p></div>
+        <div class="editorial-card"><h3>For the late queue.</h3><p>A smoother focus ritual for gaming and deep creative work.</p></div>
+        <div class="editorial-card"><h3>For everyday carry.</h3><p>Designed to feel at home in premium retail, kitchens, studios, and bags.</p></div>
+      </div>
+    </section>
+
+    <section class="faq-section section-pad reveal">
+      <div class="container split">
+        <div><span class="eyebrow">FAQ</span><h2>Everything you want to know before the first sip.</h2></div>
+        <div class="faq"><details open><summary>Is VYRO sugar free?</summary><p>Yes. Launch flavors are zero sugar with a light sparkling finish.</p></details><details><summary>How much caffeine is inside?</summary><p>Each can contains 160mg caffeine from green tea extract.</p></details><details><summary>Is it only for gaming?</summary><p>No. VYRO is built for creators, office days, workouts, travel, and evening plans too.</p></details></div>
+      </div>
+    </section>
+
+    <section class="newsletter section-pad reveal">
+      <div class="container newsletter-box">
+        <h2>Get launch drops before everyone else.</h2>
+        <form><input type="email" placeholder="Email address" required><button class="btn primary">Join Waitlist</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a><p>Fuel Beyond Limits.</p></div>
+      <div><h4>Explore</h4><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Social</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Discord</a></div>
+    </div>
+  </footer>
+
+  <div class="search-overlay"><button class="close-search"><i class="fa-solid fa-xmark"></i></button><input type="search" placeholder="Search VYRO flavors"></div>
+  <aside class="cart-drawer"></aside><div class="backdrop"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/cart.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script>
+</body>
+</html>

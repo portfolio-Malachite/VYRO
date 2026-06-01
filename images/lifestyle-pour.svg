@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="54" fill="#F1E4D0"/>
+  <circle cx="956" cy="184" r="148" fill="#FFB800" opacity=".72"/>
+  <circle cx="250" cy="690" r="210" fill="#F5C400" opacity=".16"/>
+  <rect x="164" y="188" width="322" height="520" rx="52" fill="#fffaf2"/>
+  <rect x="214" y="260" width="222" height="322" rx="38" fill="#F5C400"/>
+  <text x="325" y="435" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="70" fill="#fff">VYRO</text>
+  <path d="M722 196c130 58 202 157 216 298 8 82-18 142-79 180-82 51-183 24-237-55-42-61-54-149-36-264" stroke="#111" stroke-width="34" stroke-linecap="round"/>
+  <path d="M683 306c96 21 161 80 194 176" stroke="#fff" stroke-width="28" stroke-linecap="round"/>
+  <rect x="674" y="516" width="246" height="180" rx="36" fill="#fffaf2" stroke="#111" stroke-opacity=".12" stroke-width="8"/>
+  <path d="M712 552c52 24 108 24 168 0" stroke="#FFB800" stroke-width="18" stroke-linecap="round"/>
+  <text x="92" y="804" font-family="Arial Black, Arial, sans-serif" font-size="58" fill="#111">OPEN. POUR. PERFORM.</text>
+</svg>

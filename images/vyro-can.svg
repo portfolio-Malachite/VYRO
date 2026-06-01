@@ -1,0 +1,37 @@
+<svg width="760" height="1180" viewBox="0 0 760 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="canBody" x1="174" y1="80" x2="586" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffdf8"/>
+      <stop offset=".18" stop-color="#f6efe4"/>
+      <stop offset=".52" stop-color="#ffffff"/>
+      <stop offset=".78" stop-color="#ece2d2"/>
+      <stop offset="1" stop-color="#fffaf1"/>
+    </linearGradient>
+    <linearGradient id="label" x1="226" y1="318" x2="534" y2="910" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5C400"/>
+      <stop offset=".55" stop-color="#9a7cff"/>
+      <stop offset="1" stop-color="#FFB800"/>
+    </linearGradient>
+    <filter id="softShadow" x="55" y="0" width="650" height="1180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="42" stdDeviation="34" flood-color="#F5C400" flood-opacity=".16"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#D9A441" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <g filter="url(#softShadow)">
+    <path d="M186 134c0-54 87-98 194-98s194 44 194 98v910c0 54-87 98-194 98s-194-44-194-98V134Z" fill="url(#canBody)"/>
+    <ellipse cx="380" cy="134" rx="194" ry="98" fill="#d8cfc1"/>
+    <ellipse cx="380" cy="128" rx="148" ry="62" fill="#fffaf2"/>
+    <ellipse cx="380" cy="1044" rx="194" ry="98" fill="#d8cfc1"/>
+    <ellipse cx="380" cy="1037" rx="148" ry="62" fill="#fffaf2"/>
+    <path d="M232 248h296v648c-40 38-90 58-148 58s-108-20-148-58V248Z" fill="url(#label)" opacity=".94"/>
+    <path d="M260 292c32 18 72 27 120 27s88-9 120-27v102c-32-18-72-27-120-27s-88 9-120 27V292Z" fill="#fff8e9" opacity=".9"/>
+    <path d="M266 755c35-20 73-30 114-30s79 10 114 30v82c-35 20-73 30-114 30s-79-10-114-30v-82Z" fill="#fff8e9" opacity=".92"/>
+    <text x="380" y="552" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="116" letter-spacing="7" fill="#fffdf8">VYRO</text>
+    <text x="380" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" letter-spacing="7" fill="#fffdf8">CLEAN ENERGY</text>
+    <text x="380" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" letter-spacing="5" fill="#111111">CITRUS MANGO</text>
+    <path d="M305 410c42-48 91-48 149 0-51-15-101-15-149 0Z" fill="#FFB800"/>
+    <path d="M284 722c64-30 128-30 192 0" stroke="#111" stroke-opacity=".22" stroke-width="10" stroke-linecap="round"/>
+    <path d="M510 220c22 136 32 281 30 435-1 124-12 239-33 345" stroke="#111" stroke-opacity=".08" stroke-width="18" stroke-linecap="round"/>
+    <path d="M240 224c-18 132-26 265-24 399 2 128 12 248 31 359" stroke="#fff" stroke-opacity=".55" stroke-width="20" stroke-linecap="round"/>
+  </g>
+</svg>
