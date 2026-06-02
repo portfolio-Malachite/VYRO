@@ -1,22 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About VYRO</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About VYRO | Clean Energy Rebuilt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="about-page">
   <div class="loader"><div class="loader-mark">VYRO</div></div>
-  <header class="navbar"><a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a><nav class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><a class="icon-btn" href="dashboard.html"><i class="fa-regular fa-user"></i></a><button class="icon-btn cart-toggle"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button><button class="icon-btn menu-toggle"><i class="fa-solid fa-bars"></i></button></div></header>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="dashboard.html"><i class="fa-regular fa-user"></i></a>
+      <button class="icon-btn cart-toggle"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+      <button class="icon-btn menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
   <main>
-    <section class="page-hero section-pad"><div class="container"><span class="eyebrow">Our Story</span><h1>Built for the people who keep going after normal stops.</h1><p>VYRO started as a cleaner energy ritual for founders, gamers, creators, athletes, and late-night builders.</p></div></section>
-    <section class="section-pad reveal"><div class="container split"><div><span class="eyebrow">Mission</span><h2>Make high performance feel premium, clean, and culture-ready.</h2></div><p>We believe energy should sharpen the moment without borrowing from tomorrow. Every can is formulated for focus, flavor, and a luxury presence.</p></div></section>
-    <section class="section-pad reveal"><div class="container split reverse"><img class="wide-image" src="images/team.svg" alt="VYRO team" width="1200" height="760" loading="lazy" decoding="async"><div><span class="eyebrow">Vision</span><h2>The beverage brand for modern ambition.</h2><p>From desk to gym to after-hours, VYRO is building a global lifestyle platform around clean energy and bold taste.</p></div></div></section>
-    <section class="section-pad reveal"><div class="container section-head"><span class="eyebrow">Timeline</span><h2>From formula to first drop.</h2></div><div class="container timeline"><div><strong>2024</strong><p>Prototype formula tested with creators.</p></div><div><strong>2025</strong><p>Brand, packaging, and launch community built.</p></div><div><strong>2026</strong><p>VYRO goes direct-to-consumer with three flavors.</p></div></div></section>
-    <section class="section-pad reveal"><div class="container value-grid"><article><h3>Clean Lift</h3><p>Formulas that respect your body.</p></article><article><h3>Design Obsession</h3><p>Every touchpoint should feel premium.</p></article><article><h3>Culture First</h3><p>Made for gaming, fitness, music, and motion.</p></article></div></section>
-    <section class="stats section-pad reveal"><div class="container stat-grid"><div><strong>3</strong><span>Launch flavors</span></div><div><strong>12</strong><span>Ingredient stack</span></div><div><strong>48K</strong><span>Community waitlist</span></div><div><strong>0g</strong><span>Sugar</span></div></div></section>
+    <section class="about-hero" id="story">
+      <span class="about-hero-watermark">VYRO</span>
+      <div class="container about-hero-grid">
+        <div class="about-hero-copy">
+          <span class="eyebrow">Our Story</span>
+          <h1>ENERGY,<br>REBUILT<br>FROM THE<br>CAN UP.</h1>
+          <p>Most energy drinks are overloaded with sugar, artificial ingredients, and aggressive branding. VYRO was built differently for clean focus, modern performance, and a better daily ritual.</p>
+          <a class="about-cta" href="#mission">Explore The Mission <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="about-hero-stats" aria-label="VYRO product highlights">
+            <div><strong>0g</strong><span>Sugar</span></div>
+            <div><strong>160mg</strong><span>Natural Caffeine</span></div>
+            <div><strong>4</strong><span>Signature Flavors</span></div>
+          </div>
+        </div>
+        <div class="about-hero-visual" aria-label="Floating Electric Berry VYRO can">
+          <span class="about-glow"></span>
+          <span class="about-ring about-ring-one"></span>
+          <span class="about-ring about-ring-two"></span>
+          <span class="about-particle particle-one"></span>
+          <span class="about-particle particle-two"></span>
+          <span class="about-particle particle-three"></span>
+          <span class="about-particle particle-four"></span>
+          <span class="about-particle particle-five"></span>
+          <img class="about-hero-can" src="images/webp/can-card-1.webp" alt="Electric Berry VYRO can" width="900" height="1200" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="about-problem section-pad" id="mission">
+      <div class="container about-split">
+        <div class="about-problem-left">
+          <span class="eyebrow">The Problem</span>
+          <h2>THE INDUSTRY<br>GOT LOUD.<br>WE GOT SMART.</h2>
+          <div class="problem-stats">
+            <article class="about-stat about-reveal"><strong><span data-count="80">0</span>%+</strong><p>Energy drinks loaded with sugar</p></article>
+            <article class="about-stat about-reveal"><strong><span data-count="160">0</span>mg</strong><p>Natural caffeine</p></article>
+            <article class="about-stat about-reveal"><strong><span data-count="0">0</span>g</strong><p>Sugar</p></article>
+            <article class="about-stat about-reveal"><strong><span data-count="100">0</span>%</strong><p>Clean energy focus</p></article>
+          </div>
+        </div>
+        <div class="about-editorial about-reveal">
+          <p>Energy should feel clean, focused, and designed for the way people actually move now: from creator sessions to training blocks, late launches, and everyday momentum.</p>
+          <p>VYRO exists for the people who want function without the crash, flavor without the sugar, and a can that looks as considered as the ritual itself.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-timeline-section section-pad">
+      <div class="container about-section-head">
+        <span class="eyebrow">Timeline Story</span>
+        <h2>FROM FIRST SPARK<br>TO FIRST DROP.</h2>
+      </div>
+      <div class="container about-timeline">
+        <div class="timeline-line"><span class="timeline-progress"></span></div>
+        <article class="timeline-step about-reveal">
+          <img src="images/webp/can-card-1.webp" alt="VYRO idea" width="360" height="480" loading="lazy" decoding="async">
+          <span>2024</span>
+          <h3>Idea</h3>
+          <p>A cleaner energy ritual for creators, gamers, and builders who hated the crash.</p>
+        </article>
+        <article class="timeline-step about-reveal">
+          <img src="images/webp/can-card-2.webp" alt="VYRO formula" width="360" height="480" loading="lazy" decoding="async">
+          <span>2025</span>
+          <h3>Formula</h3>
+          <p>Natural caffeine, B vitamins, electrolytes, and zero sugar became the non-negotiables.</p>
+        </article>
+        <article class="timeline-step about-reveal">
+          <img src="images/webp/can-card-3.webp" alt="VYRO testing" width="360" height="480" loading="lazy" decoding="async">
+          <span>2025</span>
+          <h3>Testing</h3>
+          <p>Flavor rounds were tested through long sessions, gym days, and late creative sprints.</p>
+        </article>
+        <article class="timeline-step about-reveal">
+          <img src="images/webp/can-card-4.webp" alt="VYRO design" width="360" height="480" loading="lazy" decoding="async">
+          <span>2026</span>
+          <h3>Design</h3>
+          <p>The visual system turned functional energy into something collectible and premium.</p>
+        </article>
+        <article class="timeline-step about-reveal">
+          <img src="images/webp/can-1.webp" alt="VYRO launch" width="520" height="760" loading="lazy" decoding="async">
+          <span>2026</span>
+          <h3>Launch</h3>
+          <p>VYRO enters the market as a sharper, brighter way to fuel daily performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-philosophy section-pad">
+      <div class="container philosophy-wrap">
+        <span class="eyebrow">Founding Philosophy</span>
+        <h2>LESS CRASH.<br>MORE CLARITY.</h2>
+        <div class="philosophy-grid">
+          <article class="about-reveal"><i class="fa-solid fa-bolt"></i><h3>Clean Energy</h3><p>Smooth lift for deep work, high reps, and focused play.</p></article>
+          <article class="about-reveal"><i class="fa-solid fa-leaf"></i><h3>Natural Caffeine</h3><p>Green-tea powered performance without the harsh edge.</p></article>
+          <article class="about-reveal"><i class="fa-solid fa-cube"></i><h3>Zero Sugar</h3><p>Full flavor and a crisp finish with none of the sugar load.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-ingredients section-pad">
+      <div class="container ingredients-layout">
+        <div class="ingredients-copy about-reveal">
+          <span class="eyebrow">Ingredient Spotlight</span>
+          <h2>WHAT'S<br>INSIDE<br>VYRO?</h2>
+          <p>Clean ingredients engineered for sustained performance.</p>
+          <div class="ingredient-cards">
+            <article class="ingredient-card about-reveal">
+              <i class="fa-solid fa-leaf"></i>
+              <div><h3>Green Tea Extract</h3><p>Natural caffeine source</p></div>
+            </article>
+            <article class="ingredient-card about-reveal">
+              <i class="fa-solid fa-bolt"></i>
+              <div><h3>B12 + B6</h3><p>Energy metabolism support</p></div>
+            </article>
+            <article class="ingredient-card about-reveal">
+              <i class="fa-solid fa-droplet"></i>
+              <div><h3>Electrolytes</h3><p>Better hydration support</p></div>
+            </article>
+            <article class="ingredient-card about-reveal">
+              <i class="fa-solid fa-seedling"></i>
+              <div><h3>Natural Flavors</h3><p>Real fruit inspired taste</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="ingredients-visual">
+          <span class="ingredient-glow"></span>
+          <span class="fruit-orbit fruit-one"></span>
+          <span class="fruit-orbit fruit-two"></span>
+          <span class="fruit-orbit fruit-three"></span>
+          <span class="fruit-orbit fruit-four"></span>
+          <div class="ingredient-can-stage">
+            <img class="ingredient-can" src="images/webp/can-1.webp" alt="VYRO Electric Berry can" width="900" height="1200" loading="lazy" decoding="async">
+          </div>
+          <div class="ingredient-hotspot hotspot-one">
+            <strong>Green Tea Extract</strong><span class="hotspot-line"></span><span class="hotspot-dot"></span>
+          </div>
+          <div class="ingredient-hotspot hotspot-two">
+            <strong>B12 + B6</strong><span class="hotspot-line"></span><span class="hotspot-dot"></span>
+          </div>
+          <div class="ingredient-hotspot hotspot-three">
+            <strong>Electrolytes</strong><span class="hotspot-line"></span><span class="hotspot-dot"></span>
+          </div>
+          <div class="ingredient-hotspot hotspot-four">
+            <strong>Natural Flavors</strong><span class="hotspot-line"></span><span class="hotspot-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-values section-pad">
+      <div class="container about-section-head values-head">
+        <span class="eyebrow">Brand Values</span>
+        <h2>WHAT WE<br>STAND FOR</h2>
+      </div>
+      <div class="container values-grid">
+        <article class="about-reveal"><span>01</span><h3>Performance</h3><p>Energy that supports the moment without stealing from the next one.</p></article>
+        <article class="about-reveal"><span>02</span><h3>Creativity</h3><p>A brand built for makers, streamers, founders, and original thinkers.</p></article>
+        <article class="about-reveal"><span>03</span><h3>Discipline</h3><p>Clean formulas, intentional design, and a commitment to better rituals.</p></article>
+        <article class="about-reveal"><span>04</span><h3>Consistency</h3><p>Steady focus from first sip to final task, every time you reach for VYRO.</p></article>
+      </div>
+    </section>
+
+    <section class="about-community section-pad">
+      <div class="container community-grid">
+        <div class="community-copy about-reveal">
+          <span class="eyebrow">Community</span>
+          <h2>BUILT FOR<br>CREATORS,<br>GAMERS &<br>DOERS.</h2>
+          <div class="avatar-row" aria-label="VYRO community members">
+            <span>AK</span><span>MJ</span><span>SR</span><span>VN</span><span>+</span>
+          </div>
+        </div>
+        <div class="community-cards">
+          <article class="review-card about-reveal"><p>"VYRO feels like a productivity ritual, not just a caffeine hit."</p><strong>Creator Collective</strong></article>
+          <article class="review-card about-reveal"><p>"The zero-sugar finish is clean enough for daily sessions."</p><strong>Performance Lab</strong></article>
+          <div class="community-stats">
+            <article class="about-reveal"><strong><span data-count="48">0</span>K</strong><span>early subscribers</span></article>
+            <article class="about-reveal"><strong><span data-count="4">0</span></strong><span>signature flavors</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-final-cta section-pad">
+      <span class="cta-watermark">VYRO</span>
+      <div class="container final-cta-inner">
+        <h2>READY TO<br>FUEL BEYOND<br>LIMITS?</h2>
+        <div class="final-actions">
+          <a class="btn primary" href="shop.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn ghost" href="index.html#flavors">Explore Flavors</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a><p>Fuel Beyond Limits.</p></div><div><h4>Explore</h4><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h4>Social</h4><a href="#">Instagram</a><a href="#">Discord</a><a href="#">TikTok</a></div></div></footer>
-  <div class="search-overlay"><button class="close-search"><i class="fa-solid fa-xmark"></i></button><input type="search" placeholder="Search VYRO flavors"></div><aside class="cart-drawer"></aside><div class="backdrop"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script><script src="js/cart.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a>
+        <p>Clean energy for creators, gamers, and everyday performers. Fuel Beyond Limits.</p>
+      </div>
+      <div><h4>Explore</h4><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Social</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Discord</a></div>
+      <div class="footer-newsletter"><h4>Stay Fueled</h4><p>Get drops, flavor launches, and community-only offers.</p><form><input type="email" placeholder="Email address"><button type="submit"><i class="fa-solid fa-arrow-right"></i></button></form></div>
+    </div>
+  </footer>
+
+  <div class="search-overlay"><button class="close-search"><i class="fa-solid fa-xmark"></i></button><input type="search" placeholder="Search VYRO flavors"></div>
+  <aside class="cart-drawer"></aside>
+  <div class="backdrop"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>

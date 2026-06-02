@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Bag | VYRO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="cart-page">
+  <div class="loader"><div class="loader-mark">VYRO</div></div>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a>
+    <nav class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="dashboard.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+      <button class="icon-btn cart-toggle" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="cart-main">
+    <section class="cart-hero">
+      <div class="container cart-hero-inner">
+        <div>
+          <span class="eyebrow">VYRO Cart</span>
+          <h1>Your Shopping Bag</h1>
+          <p>Clean energy selected for your daily performance.</p>
+        </div>
+        <div class="cart-hero-actions">
+          <span class="cart-total-badge"><span data-cart-total-items>0</span> Items</span>
+          <a class="continue-shopping" href="shop.html">Continue Shopping <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-experience">
+      <div class="container cart-layout" data-cart-page></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html"><img src="images/webp/vyro-logo-nav.webp" alt="VYRO" width="300" height="156" decoding="async"></a><p>Clean energy for creators, gamers, and everyday performers. Fuel Beyond Limits.</p></div>
+      <div><h4>Explore</h4><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Support</h4><a href="login.html">Login</a><a href="register.html">Register</a><a href="checkout.html">Checkout</a></div>
+      <div class="footer-newsletter"><h4>Stay Fueled</h4><p>Get drops, flavor launches, and community-only offers.</p><form><input type="email" placeholder="Email address"><button type="submit"><i class="fa-solid fa-arrow-right"></i></button></form></div>
+    </div>
+  </footer>
+
+  <div class="search-overlay"><button class="close-search"><i class="fa-solid fa-xmark"></i></button><input type="search" placeholder="Search VYRO flavors"></div>
+  <aside class="cart-drawer"></aside>
+  <div class="backdrop"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

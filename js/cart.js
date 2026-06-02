@@ -8,12 +8,35 @@ const VYRO_PRODUCTS = [
   {id:"creator",name:"Creator Drop",price:48,category:"limited",image:"images/vyro-can.svg",tag:"Cans, glass, tote, and launch sticker kit.",flavor:"Limited ecommerce bundle"}
 ];
 
+window.VYRO_PRODUCTS = VYRO_PRODUCTS;
+
+let memoryCart = [];
+
+function readStoredCart(){
+  try{
+    const stored = window.localStorage?.getItem("vyroCart");
+    return JSON.parse(stored || "[]");
+  }catch(error){
+    console.warn("[VYRO Cart] Storage unavailable, using in-memory cart.", error);
+    return memoryCart;
+  }
+}
+
+function writeStoredCart(items){
+  memoryCart = items;
+  try{
+    window.localStorage?.setItem("vyroCart", JSON.stringify(items));
+  }catch(error){
+    console.warn("[VYRO Cart] Cart saved in memory only.", error);
+  }
+}
+
 const cartState = {
-  items: JSON.parse(localStorage.getItem("vyroCart") || "[]")
+  items: readStoredCart()
 };
 
 function saveCart(){
-  localStorage.setItem("vyroCart", JSON.stringify(cartState.items));
+  writeStoredCart(cartState.items);
   renderCart();
   window.dispatchEvent(new CustomEvent("vyro:cart-updated"));
 }
@@ -29,7 +52,6 @@ function setCartQty(id, qty = 1, openDrawer = false){
   if(existing){ existing.qty = nextQty; }
   else{ cartState.items.push({...product, qty: nextQty}); }
   saveCart();
-  if(openDrawer) document.body.classList.add("cart-open");
 }
 
 function addToCart(id, qty = 1, openDrawer = true){
@@ -51,30 +73,81 @@ function removeCartItem(id){
 }
 
 function renderCart(){
-  const drawer = document.querySelector(".cart-drawer");
-  if(!drawer) return;
   const totalItems = cartState.items.reduce((sum,item) => sum + item.qty, 0);
   const subtotal = cartState.items.reduce((sum,item) => sum + item.price * item.qty, 0);
+  const shipping = subtotal > 0 ? 0 : 0;
+  const tax = subtotal > 0 ? subtotal * .0825 : 0;
+  const total = subtotal + shipping + tax;
   document.querySelectorAll(".cart-count").forEach(count => count.textContent = totalItems);
-  drawer.innerHTML = `
-    <div class="cart-head"><h3>Your Cart</h3><button class="icon-btn cart-close" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button></div>
-    <div class="cart-items">
-      ${cartState.items.length ? cartState.items.map(item => `
-        <div class="cart-item">
-          <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async">
-          <div>
-            <h4>${item.name}</h4>
-            <p>$${item.price.toFixed(2)}</p>
-            <div class="qty-mini"><button data-cart-step="-1" data-id="${item.id}">-</button><span>${item.qty}</span><button data-cart-step="1" data-id="${item.id}">+</button></div>
+  document.querySelectorAll("[data-cart-total-items]").forEach(count => count.textContent = totalItems);
+
+  renderCartPage({totalItems, subtotal, shipping, tax, total});
+
+  const drawer = document.querySelector(".cart-drawer");
+  if(!drawer) return;
+  drawer.innerHTML = "";
+}
+
+function renderCartPage({subtotal, shipping, tax, total}){
+  const cartPage = document.querySelector("[data-cart-page]");
+  if(!cartPage) return;
+
+  if(!cartState.items.length){
+    cartPage.innerHTML = `
+      <div class="cart-empty-state">
+        <div>
+          <span class="eyebrow">Empty Bag</span>
+          <h2>Your VYRO bag is ready.</h2>
+          <p>Add clean energy flavors to build your daily performance stack.</p>
+          <a class="continue-shopping" href="shop.html">Shop Collection <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>`;
+    return;
+  }
+
+  cartPage.innerHTML = `
+    <div class="cart-items-panel">
+      ${cartState.items.map(item => `
+        <article class="premium-cart-item">
+          <div class="cart-product-media"><img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async"></div>
+          <div class="cart-product-copy">
+            <h3>${item.name}</h3>
+            <span class="flavor">${item.flavor}</span>
+            <p>${item.tag}</p>
+            <div class="cart-item-bottom">
+              <div class="cart-qty-control" aria-label="Quantity selector">
+                <button type="button" data-cart-step="-1" data-id="${item.id}" aria-label="Decrease quantity">-</button>
+                <span>${item.qty}</span>
+                <button type="button" data-cart-step="1" data-id="${item.id}" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="cart-link-action" type="button">Save for later</button>
+              <button class="cart-link-action" type="button" data-remove="${item.id}">Remove</button>
+            </div>
           </div>
-          <button data-remove="${item.id}" aria-label="Remove ${item.name}"><i class="fa-solid fa-trash"></i></button>
-        </div>`).join("") : `<p>Your cart is ready for its first VYRO drop.</p>`}
+          <strong class="cart-item-price">$${(item.price * item.qty).toFixed(2)}</strong>
+        </article>`).join("")}
     </div>
-    <div class="cart-foot">
-      <div class="coupon"><input placeholder="Coupon code"><button class="btn ghost">Apply</button></div>
-      <div class="subtotal"><span>Subtotal</span><span>$${subtotal.toFixed(2)}</span></div>
-      <a class="btn primary" href="checkout.html" style="width:100%">Checkout</a>
-    </div>`;
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-coupon"><input placeholder="Coupon code"><button type="button">Apply</button></div>
+      <div class="summary-lines">
+        <div class="summary-line"><span>Subtotal</span><strong>$${subtotal.toFixed(2)}</strong></div>
+        <div class="summary-line"><span>Shipping</span><strong>${shipping === 0 ? "Free" : `$${shipping.toFixed(2)}`}</strong></div>
+        <div class="summary-line"><span>Tax</span><strong>$${tax.toFixed(2)}</strong></div>
+        <div class="summary-line total"><span>Total</span><strong>$${total.toFixed(2)}</strong></div>
+      </div>
+      <a class="checkout-button" href="checkout.html">Checkout <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="payment-buttons">
+        <button type="button"><i class="fa-brands fa-apple"></i> Pay</button>
+        <button type="button">G Pay</button>
+        <button type="button"><i class="fa-brands fa-paypal"></i></button>
+      </div>
+      <div class="trust-list">
+        <span><i class="fa-solid fa-check"></i> Secure payment</span>
+        <span><i class="fa-solid fa-check"></i> Fast shipping</span>
+        <span><i class="fa-solid fa-check"></i> Easy returns</span>
+      </div>
+    </aside>`;
 }
 
 document.addEventListener("click", event => {
@@ -87,3 +160,10 @@ document.addEventListener("click", event => {
 });
 
 document.addEventListener("DOMContentLoaded", renderCart);
+
+window.getCartQty = getCartQty;
+window.setCartQty = setCartQty;
+window.addToCart = addToCart;
+window.changeQty = changeQty;
+window.removeCartItem = removeCartItem;
+window.renderCart = renderCart;
